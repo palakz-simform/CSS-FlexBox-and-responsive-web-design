@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@300;400&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+
+}
+
+.btn {
+  display: inline-block;
+  padding: 1em 2.5em;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #20B2AA;
+}
+
+/* navbar styling */
+
+/* Desktop mode */
+.navbar input[type='checkbox'],
+.navbar .hamburber-lines {
+  display: none;
+}
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 0.85;
+  z-index: 999
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.logo {
+  order: 1;
+  font-size: 3rem;
+}
+
+.navbar a {
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #20B2AA;
+}
+
+
+/* Showcase styling */
+.showcase-area {
+  height: 50vh;
+  background: url('./img/greece-showcase.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.main-title {
+  text-transform: uppercase;
+}
+
+/* About us */
+
+#about {
+  padding: 50px 0px;
+  background-color: #f5f5f7;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about h2 {
+  font-size: 3.2rem;
+}
+
+#about p {
+  font-size: 1.6rem;
+  color: #555;
+}
+
+#about small {
+  color: #666;
+  font-weight: 600;
+}
+
+.about-img {
+  flex: 1 1 400px;
+  padding: 30px;
+  transform: translateX(150%);
+  animation: about-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-animation {
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.about-text {
+  flex: 1 1 400px;
+  padding: 30px;
+  margin: auto;
+  transform: translateX(-150%);
+  animation: about-animation 1s ease-in-out forwards;
+}
+
+.about-img img {
+  display: block;
+  height: 400px;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: center;
+}

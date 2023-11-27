@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Restaurant Website</title>
 </head>
 <body>
-    
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox">
+            <div class="hamburber-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#showcase">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#countries">Countries</a></li>
+                <li><a href="#places">Places</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <h1 class="logo">TW</h1>
+        </div>
+    </nav>
+    <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+            <h1 class="main-title">Plan your Next Adventure</h1>
+            <p>Greece is always a good idea.</p>
+            <a href="#places" class="btn btn-primary">Places</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                <p class="small">About Us</p>
+                <h2>Discover extraordinary destinations with us, where personalized adventures come to life.</h2>
+                <p>At Travel World, we believe that travel is not just about reaching a destination; it's about embarking on
+                a journey of discovery, creating lasting memories, and connecting with the world in a meaningful way. We are more than
+                just a travel website; we are your companions on the road to exploration.</p>
+            </div>
+            <div class="about-img">
+                <img src="./img//about.jpg" alt="about-us"/>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
